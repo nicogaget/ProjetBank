@@ -20,7 +20,7 @@ public class CompteReader {
         List<String> resultats = new ArrayList<>();
 
         try {
-            reader = new BufferedReader(new FileReader("src/com/sauvegarde/cpt"+numeroCompte+".txt"));
+            reader = new BufferedReader(new FileReader("sauvegarde/comptes/cpt"+numeroCompte+".txt"));
             String ligne = null;
             while ((ligne = reader.readLine()) != null) {
                 System.out.println(ligne);

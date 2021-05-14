@@ -19,7 +19,7 @@ public class CompteWriter {
         int nomFichier = compte.getNumero();
 
         try {
-            writer = new BufferedWriter(new FileWriter("src/com/sauvegarde/cpt" + nomFichier + ".txt"));
+            writer = new BufferedWriter(new FileWriter("sauvegarde/comptes/cpt" + nomFichier + ".txt"));
             writer.write(compte.toString());
             writer.newLine();
             System.out.println("Enregistrment du "+ compte.toString());

@@ -13,7 +13,7 @@ public class ClientWriter {
     public static void writeUser(Client client) {
         BufferedWriter writer = null;
         try {
-            writer = new BufferedWriter(new FileWriter("src/com/sauvegarde/client.txt",true));
+            writer = new BufferedWriter(new FileWriter("sauvegarde/client.txt",true));
             writer.write(
                     client.getNumeroClient() + ","
                             + client.getNom() + ","

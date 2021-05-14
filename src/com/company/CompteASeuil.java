@@ -3,9 +3,7 @@ package com.company;
 public class CompteASeuil extends Compte implements ICompteASeuil{
     private double seuil = 10.00;
 
-    public CompteASeuil(double seuil) {
-        this.seuil = seuil;
-    }
+    public CompteASeuil(double seuil) {}
 
     public CompteASeuil(double solde, int numero) {
         super(solde, numero);
