@@ -1,2 +1,0 @@
-CompteRemunere: cpt num 2, solde 200.0, taux=0.5
-
