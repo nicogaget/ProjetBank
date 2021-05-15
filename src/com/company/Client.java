@@ -1,8 +1,10 @@
 package com.company;
 
+import java.io.File;
+import java.io.Serializable;
 import java.util.*;
 
-public class Client {
+public class Client implements Serializable {
 
     private String nom;
     private String prenom;
@@ -22,6 +24,7 @@ public class Client {
         this.prenom = prenom;
         this.age = age;
         this.numeroClient = numeroClient;
+
     }
 
     public String getNom() {

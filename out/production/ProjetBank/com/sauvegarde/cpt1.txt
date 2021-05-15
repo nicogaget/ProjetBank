@@ -1,2 +1,0 @@
-Compte A seuil : cpt num 1, solde :100.0, seuil :10.0
-

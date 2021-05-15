@@ -2,14 +2,23 @@ package com.company;
 
 
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        Bank bank = new Bank();
 
-        Client client = new Client("Fissot", "Antoine", 35, 32253524);
-        ClientWriter.writeUser(client);
+//        List<Client> clients = ClientDao.getClients();
+//        System.out.println(clients);
+        Client client;
+        bank.ajouterClient(client =new Client("Fissot", "Antoine", 35, 32253524));
+        bank.ajouterClient(client =new Client("Gaget", "Nico", 35, 53524));
+
+        List<Compte>Comptes = CompteDao.getComptesClient(1);
+        System.out.println(Comptes);
+
         Compte c1 = new CompteASeuil(100, 1);
         Compte c2 = new CompteRemunere(200,2,0.5);
         CompteASeuilRemunere c3 = new CompteASeuilRemunere(455, 3, 0.2, 10);
@@ -31,20 +40,6 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-//        System.out.println(c3.getSolde());
-//        try {
-//            c3.retirer(400);
-//        } catch (BanqueException e) {
-//            System.out.println(e.getMessage());
-//        }
-//        System.out.println(c3.getSolde());
-//        c3.verserInterets();
-//        System.out.println(c3.getSolde());
-//        try {
-//            c3.retirer(400);
-//        } catch (BanqueException e) {
-//            System.out.println(e.getMessage());
-//        }
 
         try {
             System.out.println("test1");

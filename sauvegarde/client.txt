@@ -1,1 +1,10 @@
-32253524,Fissot,Antoine,35
+Prenom : Antoine
+Nom : Fissot
+Num_client : 32253524
+Age : 35
+
+Prenom : Nico
+Nom : Gaget
+Num_client : 53524
+Age : 35
+

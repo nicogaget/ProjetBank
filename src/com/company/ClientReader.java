@@ -15,6 +15,7 @@ public class ClientReader {
             String ligne = null;
             while ((ligne = reader.readLine()) != null) {
                 resultats.add(ligne);
+
             }
         } catch (IOException e) {
             System.err.println("erreur de lecture: " + e.getMessage());

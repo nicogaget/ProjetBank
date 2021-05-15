@@ -8,6 +8,9 @@ public class Compte {
     public Compte() {
     }
 
+    public Compte(double solde, int numero, int seuil, double taux) {
+    }
+
     public Client getClient() {
         return client;
     }
